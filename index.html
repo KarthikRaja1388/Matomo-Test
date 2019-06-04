@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+
+
+    <!-- The Firm -->
+    <script type="text/javascript">
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="//localhost/analytics/matomo/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '8']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End The Firm Code -->
+    
+  
+    <title>Github Matomo Test</title>
 </head>
 <body>
-    <h1 style="font-size: 50px">Testing</h1>
+    <h1 style="font-size: 50px">Testing</h1> 
+    
+    <button onclick="_pa.push(['trackEvent','Test', 'Click button', 'click']);">Trigger Event</button>
 </body>
 </html>
